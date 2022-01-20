@@ -23,3 +23,46 @@ font-family: 'Raleway', sans-serif;
 - Weights: 400, 700 
 */
 
+
+html {
+    font-size: 14px;
+    background-color: hsl(229, 57%, 11%);
+    font-family: 'Raleway', sans-serif;
+    color: hsl(243, 100%, 93%);
+}
+
+.num {
+    color: hsl(228, 56%, 26%);
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.gb {
+    color: hsl(229, 7%, 55%);
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.box3 {
+    background-color: white;
+    width: 200px;
+}
+
+
+@media screen and (min-width: 401px) {
+    /* DESKTOP VERSION */
+    .mobilebg {
+        display: none;
+    }
+
+
+}
+
+
+@media screen and (max-width: 300px) {
+    /* MOBILE VERSION */
+    .desktopbg {
+        display: none;
+    }
+
+}
