@@ -34,17 +34,24 @@ html {
     color: hsl(228, 56%, 26%);
     font-weight: 700;
     font-size: 40px;
+    float: left;
 }
 
 .gb {
     color: hsl(229, 7%, 55%);
     font-weight: 600;
     font-size: 12px;
+    display: inline-block;
+    margin-top: 15px;
+    padding-left: 10px;
 }
 
 .box3 {
     background-color: white;
-    width: 200px;
+    width: 130px;
+    height: 48px;
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 
 .box1 {
@@ -85,6 +92,18 @@ html {
     .mobilebg {
         display: none;
     }
+
+    .box3:before {
+        content: " ";
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        border: 20px solid;
+        border-color: white white transparent transparent;
+    }
 }
 
 @media screen and (max-width: 300px) {
@@ -93,3 +112,4 @@ html {
         display: none;
     }
 }
+
