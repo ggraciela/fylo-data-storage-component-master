@@ -37,6 +37,12 @@ html {
     float: left;
 }
 
+.used,
+.zero,
+.thousand {
+    font-weight: 700;
+}
+
 .gb {
     color: hsl(229, 7%, 55%);
     font-weight: 600;
@@ -83,9 +89,30 @@ html {
     margin-top: 30px;
 }
 
-/* .box2 {
+.box2 {
     background-color: hsl(228, 56%, 26%);
-} */
+    border-radius: 10px;
+}
+
+.slider {
+    overflow: hidden;
+    width: 450px;
+    height: 13px;
+    -webkit-appearance: none;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 25px;
+    border: hsl(229, 57%, 11%) 2px solid;
+
+}
+
+.slider::-webkit-slider-thumb {
+    width: 11px;
+    -webkit-appearance: none;
+    height: 11px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: -80px 0 0 80px #43e5f7;
+}
 
 @media screen and (min-width: 401px) {
     /* DESKTOP VERSION */
@@ -112,4 +139,3 @@ html {
         display: none;
     }
 }
-

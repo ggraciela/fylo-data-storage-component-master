@@ -20,26 +20,37 @@
         <section class="box1">
             <img src="./images/logo.png" alt="" class="logo" />
             <section class="icons">
-              <section class="icon1">
-                  <img src="./images/icon-document.png" alt="" class="doc" />
-              </section>
-              <section class="icon2">
-                  <img src="./images/icon-folder.png" alt="" class="folder" />
-              </section>
-              <section class="icon3">
-                  <img src="./images/icon-upload.png" alt="" class="upload" />
-              </section>
+                <section class="icon1">
+                    <img src="./images/icon-document.png" alt="" class="doc" />
+                </section>
+                <section class="icon2">
+                    <img src="./images/icon-folder.png" alt="" class="folder" />
+                </section>
+                <section class="icon3">
+                    <img src="./images/icon-upload.png" alt="" class="upload" />
+                </section>
             </section>
         </section>
 
         <section class="box2">
-            <div class="sentence">You’ve used 815 GB of your storage</div>
+            <div class="sentence">
+                You’ve used <span class="used">815 GB</span> of your storage
+            </div>
+            <div class="sliderbody">
+                <input
+                    type="range"
+                    min="0"
+                    max="1000"
+                    value="815"
+                    class="slider"
+                />
+            </div>
             <section class="box3">
                 <span class="num">185</span>
                 <span class="gb">GB LEFT</span>
             </section>
-            <div class="zero">0 GB</div>
-            <div class="thousand">1000 GB</div>
+            <span class="zero">0 GB</span>
+            <span class="thousand">1000 GB</span>
         </section>
     </body>
 </html>
