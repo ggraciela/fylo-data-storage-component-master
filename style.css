@@ -92,8 +92,11 @@ html {
 .box2 {
     background-color: hsl(228, 56%, 26%);
     border-radius: 10px;
+    width: 550px;
+    height: 150px;
 }
 
+/* slider's body itself */
 .slider {
     overflow: hidden;
     width: 450px;
@@ -102,17 +105,24 @@ html {
     background-color: hsl(229, 57%, 11%);
     border-radius: 25px;
     border: hsl(229, 57%, 11%) 2px solid;
-
 }
 
+/* slider button */
 .slider::-webkit-slider-thumb {
     width: 11px;
     -webkit-appearance: none;
     height: 11px;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
     background: white;
-    box-shadow: -80px 0 0 80px #43e5f7;
 }
+
+
+/* background: #fe9f98;
+background: linear-gradient(90deg,#fe9f98 0%, #fb4d92 80%);
+background: -webkit-linear-gradient(90deg,#fe9f98 0%, #fb4d92 80%);
+background: -moz-linear-gradient(90deg,#fe9f98 0%, #fb4d92 80%); */
+
 
 @media screen and (min-width: 401px) {
     /* DESKTOP VERSION */
@@ -120,6 +130,7 @@ html {
         display: none;
     }
 
+    /* bubble chat triangle */
     .box3:before {
         content: " ";
         position: absolute;
